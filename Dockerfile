@@ -1,6 +1,7 @@
 # ---- Base Stage ----
 FROM ubuntu:20.04 AS base
 ENV DEBIAN_FRONTEND=noninteractive
+COPY sources.list /etc/apt/
 RUN apt update && \
     apt upgrade -y && \
     apt install -y software-properties-common && \
