@@ -29,7 +29,7 @@ RUN apt-get update && \
 # ---- Unoserver Stage ----
 FROM node as node_n_python
 RUN apt-get install python3-pip -y
-RUN pip3 install unoserver
+RUN pip3 install unoserver==1.6
 
 
 # ---- Build Stage ----
